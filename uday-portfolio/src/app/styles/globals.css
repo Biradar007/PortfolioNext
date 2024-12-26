@@ -1,0 +1,324 @@
+/* src/styles/globals.css */
+/* Import Pacifico from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+  --font-primary: 'Pacifico', cursive;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fade-in Animation for Cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Fade-in and Fade-out Animation for Modal */
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutModal {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade-in and Slide-up Animation */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Pulse Animation for Dots */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+/* Lazy Loading Slide-in Animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.timeline-date {
+  width: 20%; /* Adjust as needed */
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.timeline-line {
+  position: relative;
+  width: 2px;
+  background-color: #9ca3af;
+  height: 100%;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -4px; /* Center on line */
+  width: 10px;
+  height: 10px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 1rem;
+  width: 70%; /* Adjust width as needed */
+}
+
+.timeline-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.timeline-responsibilities {
+  margin-top: 0.5rem;
+  color: #d1d5db;
+}
+
+.timeline-responsibilities li {
+  margin-bottom: 0.3rem;
+}
+
+
+.lazy-load {
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeInSlideUp {
+  animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+.animate-fadeInModal {
+  animation: fadeInModal 0.3s ease-out forwards;
+}
+
+.animate-fadeOutModal {
+  animation: fadeOutModal 0.3s ease-out forwards;
+}
+/* Hover Effect on Timeline Item */
+.timeline-item:hover {
+  background-color: #374151; /* Slightly lighter shade */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.timeline-container {
+  scroll-behavior: smooth;
+}
+.timeline-dot {
+  animation: pulse 2s infinite;
+}
+/* Scroll Snap for Timeline */
+.timeline-container {
+  scroll-snap-type: x mandatory;
+}
+
+.timeline-item {
+  scroll-snap-align: start;
+}
+
+/* Center container styling */
+.timeline-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Timeline container styling */
+.timeline-container {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Vertical line spanning entire timeline */
+.timeline-line {
+  position: absolute;
+  left: 20%; /* Position in the center between date and content */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #888;
+}
+
+/* Timeline item structure */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* Date styling */
+.timeline-date {
+  width: 20%; /* Matches the left positioning of the timeline line */
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Experience content styling */
+.timeline-content {
+  padding-left: 2rem;
+  width: 75%;
+  font-size: 1rem;
+  color: #ddd;
+}
+/* Explicitly remove hover effects */
+.timeline-content:hover,
+.timeline-item:hover {
+  transform: none !important;
+  background-color: transparent !important;
+  transition: none !important;
+}
+
+.timeline-title {
+  font-size: 1.5rem; /* Adjust for a larger font */
+  font-weight: 700; /* Bold font */
+  margin-bottom: 0.2rem;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  font-weight: 400; /* Regular font weight for company */
+  color: #A0AEC0; /* Soft gray color */
+  margin-bottom: 1rem;
+}
+
+.timeline-responsibilities {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6; /* Increase line-height for readability */
+  color: #E2E8F0; /* Light text color for readability */
+}
+
+/* CSS for Timeline */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes moving-colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-moving-gradient {
+  background-size: 200% 200%;
+  animation: moving-colors 3s ease infinite;
+}
+.scroll-offset {
+  position: relative;
+  padding-top: 80px; /* Same height as your fixed navbar */
+  margin-top: -80px; /* Negative margin to counter the padding */
+}
+section {
+  padding-top: 3rem; /* Reduce from previous value */
+  padding-bottom: 3rem; /* Adjust based on your need */
+}
+
+h2 {
+  margin-bottom: 1.5rem; /* Adjust the heading margin */
+}
+/* @keyframes moving-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-moving-gradient {
+  background-size: 200% 200%;
+  animation: moving-gradient 3s infinite;
+} */
+
+
+
+
+
