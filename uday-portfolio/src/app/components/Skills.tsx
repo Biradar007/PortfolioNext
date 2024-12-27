@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
 import {
   FaHtml5,
