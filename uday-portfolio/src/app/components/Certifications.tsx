@@ -68,7 +68,7 @@ const Certifications = () => {
 
     if (headingRef.current) observer.observe(headingRef.current);
 
-    certificationsRef.current.forEach((cert, index) => {
+    certificationsRef.current.forEach((cert) => {
       if (cert) observer.observe(cert);
     });
 

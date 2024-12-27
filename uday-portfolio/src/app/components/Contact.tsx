@@ -55,7 +55,7 @@ const Contact = () => {
         }`}
       >
         <p className="text-lg text-gray-300 mb-6">
-          Feel free to get in touch and let's have a discussion about how we can work together.
+          Feel free to get in touch and let us have a discussion about how we can work together.
         </p>
 
         {/* Social Media Links */}

@@ -49,7 +49,7 @@ const Education = () => {
       { threshold: 0.2 }
     );
 
-    cardsRef.current.forEach((card, index) => {
+    cardsRef.current.forEach((card) => {
       if (card) {
         cardsObserver.observe(card);
       }

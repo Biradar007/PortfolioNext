@@ -50,7 +50,7 @@ const Experience = () => {
       { threshold: 0.2 }
     );
 
-    itemsRef.current.forEach((item, index) => {
+    itemsRef.current.forEach((item) => {
       if (item) {
         itemsObserver.observe(item);
       }

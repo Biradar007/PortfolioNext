@@ -36,7 +36,7 @@ const Projects = () => {
 
     if (headingRef.current) observer.observe(headingRef.current);
 
-    projectsRef.current.forEach((project, index) => {
+    projectsRef.current.forEach((project) => {
       if (project) observer.observe(project);
     });
 

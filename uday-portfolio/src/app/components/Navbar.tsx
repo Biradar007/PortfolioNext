@@ -1,18 +1,18 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // const [isDarkMode, setIsDarkMode] = useState(true);
 
   // Set initial theme on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
+    // const savedTheme = localStorage.getItem("theme");
+    // if (savedTheme === "dark") {
+    //   setIsDarkMode(true);
       document.documentElement.classList.add("dark");
-    }
+    // }
   }, []);
 
   return (

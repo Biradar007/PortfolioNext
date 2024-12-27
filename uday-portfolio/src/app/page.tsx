@@ -5,14 +5,14 @@ import About from "./components/About";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+// import { useState } from "react";
 
 export default function Home() {
-  const [isAnimationCompleted, setIsAnimationCompleted] = useState(false);
+  // const [isAnimationCompleted, setIsAnimationCompleted] = useState(false);
 
   return (
     <div className="bg-gray-900 text-gray-100 relative overflow-hidden">
