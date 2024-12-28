@@ -22,12 +22,12 @@ import {
   SiFirebase,
   SiDotnet,
   SiJquery,
-  SiCsharp
+  // SiCsharp
 } from "react-icons/si";
 const Skills = ({ scrollSpeed = 10, reverse = false }) => {
   const skills = [
     { icon: <SiPython color="#ffde57" />, name: "Python" },
-    { icon: <SiCsharp color="#512BD4" />, name: "C#" },
+    { icon: <SiPython color="#512BD4" />, name: "C#" },
     { icon: <SiDotnet color="#512BD4" />, name: ".NET" },
     { icon: <img src="/Icons/EF.png" alt="EntityFranework" className="w-full h-full" />, name: "EntityFranework" },
     { icon: <img src="/Icons/linq.png" alt="LINQ" className="w-full h-full" />, name: "LINQ" },
