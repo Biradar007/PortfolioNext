@@ -107,8 +107,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="fixed bottom-4 right-4 z-50">
-        <a
-          href="/icons/UVBResume.pdf"
+        <a target="_blank"
+          href="https://drive.google.com/file/d/13n4zO_h230WVaCZX685GuUdCq3iFRGoD/view?usp=drive_link"
           download
           className="text-white px-6 py-3 rounded-full hover:scale-110 transition-all flex items-center space-x-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-moving-gradient"
           >

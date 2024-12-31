@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+// import React from "react";
 // import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
 import {
@@ -24,6 +25,7 @@ import {
   SiJquery,
   // SiCsharp
 } from "react-icons/si";
+import Image from "next/image";
 const Skills = ({ scrollSpeed = 10, reverse = false }) => {
   const skills = [
     { icon: <SiPython color="#ffde57" />, name: "Python" },
@@ -32,7 +34,7 @@ const Skills = ({ scrollSpeed = 10, reverse = false }) => {
     { icon: <img src="/Icons/EF.png" alt="EntityFranework" className="w-full h-full" />, name: "EntityFranework" },
     { icon: <img src="/Icons/linq.png" alt="LINQ" className="w-full h-full" />, name: "LINQ" },
     { icon: <img src="/Icons/Dapper.jpeg" alt="Dapper" className="w-full h-full" />, name: "Dapper" },
-    { icon: <img src="/Icons/AJAXRed.png" alt="AJAX" className="w-full h-full" />, name: "AJAX" },
+    { icon: <Image src="/Icons/AJAXRed.svg" alt="AJAX" className="w-full h-full" />, name: "AJAX" },
     { icon: <SiJquery color="#0769AD" />, name: "jQuery" },
     { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
     { icon: <FaReact color="#61DAFB" />, name: "React.js" },
