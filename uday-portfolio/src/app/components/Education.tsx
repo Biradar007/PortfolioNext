@@ -72,13 +72,13 @@ const Education = () => {
       location: "Fullerton, CA",
       logo: "/icons/CSUF.png", // Replace with the path to your logo
     },
-    // {
-    //   degree: "Bachelor of Technology in Information Technology",
-    //   university: "Symbiosis International University",
-    //   dates: "2017 - 2021",
-    //   location: "Pune, India",
-    //   logo: "/icons/SIT.png", // Replace with the path to your logo
-    // },
+    {
+      degree: "Bachelor of Technology in Information Technology",
+      university: "Symbiosis International University",
+      dates: "2017 - 2021",
+      location: "Pune, India",
+      logo: "/icons/SIT.png", // Replace with the path to your logo
+    },
   ];
 
   return (
