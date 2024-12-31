@@ -51,14 +51,9 @@ const About = () => {
           isContentVisible ? 'animate-fadeInSlideUp' : 'opacity-0'
         }`}
       >
-        With over three years of experience in full-stack development, I have a
-        solid foundation in both front-end and back-end technologies, excelling
-        at optimizing applications and leading development teams. My technical
-        expertise spans the MEAN stack, .NET Core, C#, and SQL, along with a
-        proven ability to deliver high-quality solutions through robust coding
-        practices and effective project management. Currently pursuing a
-        Master’s in Computer Science at California State University, Fullerton,
-        I am broadening my technical and problem-solving skills further.
+      With over three years of experience in full-stack development, specializing in .NET Core, C#, SQL, React, Next.js, Angular, and Node.js. 
+      I excel at optimizing applications for performance, leading teams, and delivering high-quality, scalable solutions. 
+      Currently pursuing a Master’s in Computer Science at California State University, Fullerton, I am expanding my expertise in software development while exploring my passion for artificial intelligence and its applications in solving real-world challenges.
       </p>
     </section>
   );

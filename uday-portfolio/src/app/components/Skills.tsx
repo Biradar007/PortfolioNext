@@ -29,11 +29,11 @@ import Image from "next/image";
 const Skills = ({ scrollSpeed = 10, reverse = false }) => {
   const skills = [
     { icon: <SiPython color="#ffde57" />, name: "Python" },
-    { icon: <SiPython color="#512BD4" />, name: "C#" },
+    { icon: <Image src="/icons/Logo_C_sharp.svg" alt="EntityFranework" className="w-full h-full" width={100} height={100} />, name: "C#" },
     { icon: <SiDotnet color="#512BD4" />, name: ".NET" },
-    { icon: <img src="/icons/EF.png" alt="EntityFranework" className="w-full h-full" />, name: "EntityFranework" },
-    { icon: <img src="/icons/Linq.png" alt="LINQ" className="w-full h-full" />, name: "LINQ" },
-    { icon: <img src="/icons/Dapper.jpeg" alt="Dapper" className="w-full h-full" />, name: "Dapper" },
+    { icon: <Image src="/icons/EF.png" alt="EntityFranework" className="w-full h-full" width={100} height={100} />, name: "EntityFranework" },
+    { icon: <Image src="/icons/Linq.png" alt="LINQ" className="w-full h-full" width={100} height={100} />, name: "LINQ" },
+    { icon: <Image src="/icons/Dapper.jpeg" alt="Dapper" className="w-full h-full" width={100} height={100} />, name: "Dapper" },
     { icon: <Image src="/icons/AJAXRed.svg" alt="AJAX" className="w-full h-full" width={100} height={100} />, name: "AJAX" },
     { icon: <SiJquery color="#0769AD" />, name: "jQuery" },
     { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },

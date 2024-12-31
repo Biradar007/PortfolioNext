@@ -72,10 +72,10 @@ const Experience = () => {
       company: 'California State University, Fullerton',
       dates: 'Oct 2024 – Present',
       responsibilities: [
-        'Develop and maintain applications to support university operations.',
-        'Collaborate with team members to translate user requirements into functional solutions.',
-        'Create automated test scripts to improve testing efficiency and reliability.',
-        'Contribute to Agile processes through coding, debugging, and documentation.',
+        'Develop and maintain applications using technologies like React, Next.js, and Node.js to support university operations.',
+        'Provide technical support to professors, staff, and students, resolving issues promptly to ensure smooth operations.',
+        'Maintain and manage labs and classrooms, ensuring all systems and equipment function effectively.',
+        'Upgrade lab systems to enhance performance, usability, and reliability.',
         'Engage in troubleshooting to ensure smooth application functionality.',
       ],
     },
@@ -84,8 +84,13 @@ const Experience = () => {
       company: 'Holtec Asia',
       dates: '2021 – 2024',
       responsibilities: [
-        'Designed and implemented software solutions for energy systems.',
-        'Collaborated with cross-functional teams to improve system performance.',
+        'Developed new modules from scratch using React, .NET Core, C#, and MS SQL, reducing processing time by 20% and increasing efficiency.',
+        'Enhanced multiple applications, improving performance by 30% and boosting productivity.',
+        'Integrated Single Sign-On (SSO) for thousands of users, enhancing security.',
+        'Deployed and monitored production applications, achieving 99.9% uptime and minimizing disruptions.',
+        'Led a team of developers, completing projects 10% ahead of schedule and saving over 200 development hours.',
+        'Built Web API services, improving data retrieval by 20% and boosting user engagement.',
+        'Integrated Kinetics for real-time data synchronization, reducing processing time by 35% and saving ~$50,000 annually.',
         'Managed code repositories and conducted code reviews.',
       ],
     },
@@ -139,7 +144,7 @@ const Experience = () => {
               <p className="timeline-company">{exp.company}</p>
               <ul className="timeline-responsibilities">
                 {exp.responsibilities.map((resp, i) => (
-                  <li key={i}>{resp}</li>
+                  <li className="list-disc" key={i}>{resp}</li>
                 ))}
               </ul>
             </div>
