@@ -82,7 +82,7 @@ const Experience = () => {
     {
       title: 'Software Engineer',
       company: 'Holtec Asia',
-      dates: '2021 – 2024',
+      dates: 'July 2021 – July 2024',
       responsibilities: [
         'Developed new modules from scratch using React, .NET Core, C#, and MS SQL, reducing processing time by 20% and increasing efficiency.',
         'Enhanced multiple applications, improving performance by 30% and boosting productivity.',
