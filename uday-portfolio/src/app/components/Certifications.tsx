@@ -41,7 +41,7 @@ const Certifications = () => {
     {
       title: 'Introduction of FinOps',
       platform: 'FinOps Foundation',
-      icon: '/Icons/FinOpsLogo.jpg',
+      icon: '/icons/FinOpsLogo.jpg',
     },
   ];
 
