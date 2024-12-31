@@ -70,7 +70,7 @@ const Education = () => {
       university: "California State University, Fullerton",
       dates: "2024 - Present",
       location: "Fullerton, CA",
-      logo: "/icons/csuf.png", // Replace with the path to your logo
+      logo: "/icons/CSUF.png", // Replace with the path to your logo
     },
     {
       degree: "Bachelor of Technology in Information Technology",
