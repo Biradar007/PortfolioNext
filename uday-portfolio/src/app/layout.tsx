@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     description: "Explore my journey as a software engineer.",
     url: "https://udaybiradar.com",
     siteName: "Uday Biradar",
-    images: [
-      {
-        url: "https://udaybiradar.com/path-to-thumbnail.jpg", // Replace with the correct path to your thumbnail image
-        width: 1200,
-        height: 630,
-        alt: "Uday Biradar Portfolio Thumbnail",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "", // Replace with the correct path to your thumbnail image
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Uday Biradar Portfolio Thumbnail",
+    //   },
+    // ],
     locale: "en_US",
     type: "website",
   },
@@ -46,10 +46,10 @@ export default function RootLayout({
         <meta property="og:title" content="Uday Biradar - Portfolio" />
         <meta
           property="og:description"
-          content="Explore my journey as a software engineer, showcasing projects, skills, and achievements."
+          content="Explore my journey as a software engineer."
         />
         <meta property="og:url" content="https://udaybiradar.com" />
-        <meta property="og:image" content="https://udaybiradar.com/path-to-thumbnail.jpg" />
+        {/* <meta property="og:image" content="https://udaybiradar.com/path-to-thumbnail.jpg" /> */}
         <meta property="og:type" content="website" />
       </head>
       <body
