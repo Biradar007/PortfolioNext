@@ -32,11 +32,12 @@ const Navbar = () => {
         // Hamburger Menu for Mobile View
         <>
           {/* Hamburger Menu Icon */}
-          <div className="fixed top-4 left-4 z-50">
+          <div className="fixed top-0 left-0 right-0 z-50 bg-black text-white shadow-md flex items-center justify-center px-4 h-16">
+
             <button
               onClick={toggleSidebar}
-              className="text-white focus:outline-none"
-            >
+              className="absolute left-4 text-white focus:outline-none"
+              >
               <svg
                 className="w-8 h-8"
                 fill="none"
@@ -56,6 +57,14 @@ const Navbar = () => {
                 />
               </svg>
             </button>
+            <span
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-white text-2xl font-bold border-2 border-white"
+    style={{
+      fontFamily: "'Poppins', sans-serif", // Apply stylish font
+    }}
+  >
+    UB
+  </span>           
           </div>
 
           {/* Sidebar */}

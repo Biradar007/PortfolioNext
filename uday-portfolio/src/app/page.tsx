@@ -18,7 +18,7 @@ export default function Home() {
     <div className="bg-gray-900 text-gray-100 relative overflow-hidden">
       {/* Your Name at the Top Center */}
       <motion.div
-        className="absolute top-8 left-[45%] transform -translate-x-1/2 text-3xl font-bold text-white"
+        className="absolute top-8 left-[45%] transform -translate-x-1/2 text-3xl font-bold text-white hidden sm:block"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

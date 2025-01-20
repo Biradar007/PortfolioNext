@@ -71,7 +71,7 @@ const Contact = () => {
               className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
             >
               <FaEnvelope size={20} />
-              <span>Email</span>
+              {/* <span>Email</span> */}
             </a>
             <a
               href="https://www.linkedin.com/in/uday-biradar-007/"
@@ -80,7 +80,7 @@ const Contact = () => {
               className="flex items-center space-x-2 px-4 py-2 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition"
             >
               <FaLinkedin size={20} />
-              <span>LinkedIn</span>
+              {/* <span>LinkedIn</span> */}
             </a>
             <a
               href="https://github.com/Biradar007"
@@ -89,7 +89,7 @@ const Contact = () => {
               className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition"
             >
               <FaGithub size={20} />
-              <span>GitHub</span>
+              {/* <span>GitHub</span> */}
             </a>
           </div>
         </div>
