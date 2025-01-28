@@ -70,7 +70,7 @@ const Experience = () => {
     {
       title: 'Student Assistant to IT Consultant',
       company: 'California State University, Fullerton',
-      dates: 'Oct 2024 – Present',
+      dates: 'Oct 2024 – Now',
       responsibilities: [
         'Develop and maintain applications using technologies like React, Next.js, and Node.js to support university operations.',
         'Provide technical support to professors, staff, and students, resolving issues promptly to ensure smooth operations.',
