@@ -68,9 +68,20 @@ const Experience = () => {
   // Experience data array
   const experiences = [
     {
+      title: 'Software Developer Intern',
+      company: 'Holtec International',
+      dates: 'June 2025 – July 2025',
+      responsibilities: [
+        'Designed, optimized, and deployed an iOS inventory management app using .NET MAUI, enabling factory teams to digitize manual workflows and increase process speed by 30%.',
+        'Implemented Single Sign-On (SSO) authentication and delivered critical UI enhancements to prepare the app for production release.',
+        'Architected and deployed a malware scanning system leveraging Azure Blob Storage and antivirus integrations, ensuring secure vendor file uploads.',
+        'Collaborated with product managers and engineers in a fast-paced, iterative environment to deliver user-facing features with production-ready updates every two weeks.',
+      ],
+    },
+    {
       title: 'Student Assistant to IT Consultant',
       company: 'California State University, Fullerton',
-      dates: 'Oct 2024 – Now',
+      dates: 'Oct 2024 – May 2025',
       responsibilities: [
         'Develop and maintain applications using technologies like React, Next.js, and Node.js to support university operations.',
         'Provide technical support to professors, staff, and students, resolving issues promptly to ensure smooth operations.',
