@@ -301,6 +301,96 @@ section {
 h2 {
   margin-bottom: 1.5rem; /* Adjust the heading margin */
 }
+
+@media (max-width: 768px) {
+  .timeline-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 0 1.25rem 1.25rem;
+    border-left: 2px solid #334155;
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    top: 1.2rem;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 9999px;
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  }
+
+  .timeline-date {
+    display: none;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .timeline-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .timeline-company {
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+  }
+
+  .timeline-mobile-dates {
+    font-size: 0.85rem;
+    color: #93c5fd;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  .timeline-responsibilities {
+    padding-left: 1rem;
+    line-height: 1.7;
+  }
+
+  .timeline-responsibilities li {
+    margin-bottom: 0.65rem;
+  }
+
+  .timeline-toggle-btn {
+    margin-top: 0.5rem;
+    color: #60a5fa;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 769px) {
+  .timeline-date {
+    width: 24%;
+    white-space: nowrap;
+  }
+
+  .timeline-line {
+    left: 24%;
+  }
+
+  .timeline-content {
+    width: 72%;
+  }
+}
 /* @keyframes moving-gradient {
   0% {
     background-position: 0% 50%;
@@ -317,8 +407,4 @@ h2 {
   background-size: 200% 200%;
   animation: moving-gradient 3s infinite;
 } */
-
-
-
-
 

@@ -51,9 +51,7 @@ const About = () => {
           isContentVisible ? 'animate-fadeInSlideUp' : 'opacity-0'
         }`}
       >
-      With over three years of experience in full-stack development, specializing in .NET Core, C#, SQL, React, Next.js, Angular, and Node.js. 
-      I excel at optimizing applications for performance, leading teams, and delivering high-quality, scalable solutions. 
-      Currently pursuing a Master’s in Computer Science at California State University, Fullerton, I am expanding my expertise in software development while exploring my passion for artificial intelligence and its applications in solving real-world challenges.
+      Full-Stack Software Developer with 3+ years of experience building scalable web applications using .NET Core, C#, SQL, React, Next.js, Angular, and Node.js. Experienced in designing high-performance systems, optimizing application architecture, and leading development efforts across the full software lifecycle. Recently completed a Master’s in Computer Science from California State University, Fullerton. Passionate about building AI-native applications and leveraging artificial intelligence to solve real-world problems, including developing platforms that integrate modern AI capabilities into practical products.
       </p>
     </section>
   );

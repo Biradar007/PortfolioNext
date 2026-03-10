@@ -5,6 +5,7 @@ const Experience = () => {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const itemsRef = useRef<Array<HTMLDivElement | null>>([]);
   const [visibleItems, setVisibleItems] = useState<boolean[]>([]);
+  const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
 
   // Intersection Observer for heading animation
   useEffect(() => {
@@ -81,12 +82,12 @@ const Experience = () => {
     {
       title: 'Student Assistant to IT Consultant',
       company: 'California State University, Fullerton',
-      dates: 'Oct 2024 – May 2025',
+      dates: 'Oct 2024 – Dec 2025',
       responsibilities: [
-        'Develop and maintain applications using technologies like React, Next.js, and Node.js to support university operations.',
-        'Provide technical support to professors, staff, and students, resolving issues promptly to ensure smooth operations.',
-        'Maintain and manage labs and classrooms, ensuring all systems and equipment function effectively.',
-        'Upgrade lab systems to enhance performance, usability, and reliability.',
+        'Developed and maintained applications using technologies like React, Next.js, and Node.js to support university operations.',
+        'Provided technical support to professors, staff, and students, resolving issues promptly to ensure smooth operations.',
+        'Maintained and managed labs and classrooms, ensuring all systems and equipment function effectively.',
+        'Upgraded lab systems to enhance performance, usability, and reliability.',
         'Engage in troubleshooting to ensure smooth application functionality.',
       ],
     },
@@ -127,6 +128,13 @@ const Experience = () => {
     },
   ];
 
+  const toggleExpanded = (index: number) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   return (
     <section id="experience" className="py-5">
       <h2
@@ -137,7 +145,10 @@ const Experience = () => {
       </h2>
 
       <div className="timeline-container">
-        {experiences.map((exp, index) => (
+        {experiences.map((exp, index) => {
+          const isExpanded = !!expandedItems[index];
+
+          return (
           <div
             key={index}
             ref={(el) => {
@@ -151,16 +162,39 @@ const Experience = () => {
               <span className="timeline-dot"></span>
             </div>
             <div className="timeline-content">
-              <h3 className="timeline-title">{exp.title}</h3>
-              <p className="timeline-company">{exp.company}</p>
-              <ul className="timeline-responsibilities">
+              <h3 className="timeline-title hidden md:block">{exp.title}</h3>
+              <p className="timeline-company hidden md:block">{exp.company}</p>
+
+              {/* Desktop/tablet: always show full content */}
+              <ul className="timeline-responsibilities hidden md:block">
                 {exp.responsibilities.map((resp, i) => (
                   <li className="list-disc" key={i}>{resp}</li>
                 ))}
               </ul>
+
+              {/* Mobile: show heading + company + dates, then first bullet with View more / View less */}
+              <div className="md:hidden">
+                <h3 className="timeline-title">{exp.title}</h3>
+                <p className="timeline-company">{exp.company}</p>
+                <p className="timeline-mobile-dates">{exp.dates}</p>
+                <ul className="timeline-responsibilities">
+                  {(isExpanded ? exp.responsibilities : exp.responsibilities.slice(0, 1)).map((resp, i) => (
+                    <li className="list-disc" key={i}>{resp}</li>
+                  ))}
+                </ul>
+
+                <button
+                  type="button"
+                  onClick={() => toggleExpanded(index)}
+                  className="timeline-toggle-btn"
+                >
+                  {isExpanded ? 'View less' : 'View more'}
+                </button>
+              </div>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

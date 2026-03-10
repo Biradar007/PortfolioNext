@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* Main Content */}
       <Navbar />
-      <main className="container mx-auto p-8 space-y-20 pt-24 relative z-10">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20 pt-20 sm:pt-24 relative z-10">
         <About />
         <Education />
         <Skills />
